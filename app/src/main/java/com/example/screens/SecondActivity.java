@@ -20,8 +20,8 @@ public class SecondActivity extends AppCompatActivity {
             TextView errorsTextView = findViewById(R.id.errorsTextView);
             TextView statusTextView = findViewById(R.id.statusTextView);
 
-            errorsTextView.append(status);
-            statusTextView.append(String.valueOf(errors));
+            statusTextView.append(status);
+            errorsTextView.append(String.valueOf(errors));
         }
     }
 }
