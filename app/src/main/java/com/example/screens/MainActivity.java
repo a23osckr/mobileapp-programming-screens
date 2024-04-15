@@ -19,7 +19,10 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("status", "besegrad"); // Optional
+                intent.putExtra("errors", 34); // Optional
+                startActivity(intent);
             }
         });
     }
