@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("status", "besegrad"); // Optional
-                intent.putExtra("errors", 34); // Optional
+                intent.putExtra("status", "besegrad");
+                intent.putExtra("errors", 34);
                 startActivity(intent);
             }
         });
